@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Кочеванов Владимир](https://up.htmlacademy.ru/htmlcss/31/user/1713377).
-* Наставник: [Антон Казаков] (https://htmlacademy.ru/profile/id798257).
+* Наставник: Антон Казаков (https://htmlacademy.ru/profile/id798257).
 
 ---
 
