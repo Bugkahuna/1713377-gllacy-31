@@ -11,8 +11,8 @@
 
   <body class="page-body">
     <div class="site-wrapper site-wrapper-1">
-      <div class="container">
-        <header class="main-header">
+      <!--<div class="container">-->
+        <header class="main-header container">
           <div class="site-navigation">
             <nav class="nav">
               <a class="logo-link">
@@ -85,29 +85,29 @@
           <p class="header-worktime">с 10 до 20, ежедневно</p>
           <p class="header-phone"><a href="tel:88124502525" class="header-phone_link">8 812 450-25-25</a></p>
         </header>
-      </div>
+      <!--</div>-->
         <main>
           <div class="container">
             <section class="slider">
               <h2 class="visually-hidden">Слайдер товаров</h2>
               <ul class="slider-list">
-                <li class="slider-list_item slide slide-current">
+                <li class="slider-list_item slide-1 slide-current">
                   <h3>Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
                   <a href="#" class="btn btn-choise">Давайте оба!</a>
                 </li>
-                <li class="slider-list_item slide">
+                <li class="slider-list_item slide-2 ">
                   <h3>Шоколадный пломбир и&nbsp;лимонный сорбет</h3>
                   <a href="#" class="btn btn-choise">Давайте оба!</a>
                 </li>
-                <li class="slider-list_item slide">
+                <li class="slider-list_item slide-3">
                   <h3>Пломбир с помадкой и&nbsp;клубничный щербет</h3>
                   <a href="#" class="btn btn-choise">Давайте оба!</a>
                 </li>
               </ul>
               <div class="slider_controls">
-                <button type="button" class="button-slide button-slide_current" aria-label="Первый слайд"></button>
-                <button type="button" class="button-slide" aria-label="Второй слайд"></button>
-                <button type="button" class="button-slide" aria-label="Третий слайд"></button>
+                <button type="button" class="button-slide button-slide_1 button-slide_current" aria-label="Первый слайд"></button>
+                <button type="button" class="button-slide button-slide_2" aria-label="Второй слайд"></button>
+                <button type="button" class="button-slide button-slide_3" aria-label="Третий слайд"></button>
               </div>
             </section>
             <section class="extra">
@@ -231,14 +231,14 @@
               </div>
               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A23b82a556f74aa21f55468405704962cda9c38914519eb89e6a4741c90abecb7&amp;source=constructor" width="100%" height="400"></iframe>
             </div>
-            <div class="multyplay-layer multyplay-layer_show"></div>
-            <section class="feedback feedback_show">
+            <div class="multyplay-layer"></div>
+            <section class="feedback">
               <h4>Мы обязательно вам ответим!</h4>
               <button type="button" class="feedeback_close-btn"></button>
               <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="POST">
                 <input type="text" class="input-field feedback_input-name" name="feedback-name" placeholder="Ваше имя:" required>
                 <input type="email" class="input-field feedback_input-name" name="feedback-email" placeholder="Ваш e-mail:" required>
-                <textarea name="feedback-text" class="feedback-text" required>В свободной форме</textarea>
+                <textarea name="feedback-text" class="feedback-text" placeholder="В свободной форме" required></textarea>
                 <button type="submit" class="btn feedback-btn">Отправить</button>
               </form>
             </section>
@@ -320,5 +320,7 @@
           </section>
         </footer>
       </div>
+      <script src="js/feedbackForm.js"></script>
+      <script src="js/slider.js"></script>
   </body>
 </html>
