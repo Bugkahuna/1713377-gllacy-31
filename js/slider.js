@@ -1,6 +1,6 @@
-const SlideBtn_1 = document.querySelector(".button-slide_1");
-const SlideBtn_2 = document.querySelector(".button-slide_2");
-const SlideBtn_3 = document.querySelector(".button-slide_3");
+const slideBtn_1 = document.querySelector(".button-slide_1");
+const slideBtn_2 = document.querySelector(".button-slide_2");
+const slideBtn_3 = document.querySelector(".button-slide_3");
 
 const slideImg = document.querySelector(".site-wrapper");
 
@@ -11,15 +11,15 @@ const slideTitle_3 = document.querySelector(".slide-3");
 
 
 
-SlideBtn_1.addEventListener("click", function(evt){
+slideBtn_1.addEventListener("click", function(evt){
   evt.preventDefault();
-  if(SlideBtn_2.classList.contains("button-slide_current")){
-    SlideBtn_2.classList.remove("button-slide_current");
+  if(slideBtn_2.classList.contains("button-slide_current")){
+    slideBtn_2.classList.remove("button-slide_current");
   }
-  if(SlideBtn_3.classList.contains("button-slide_current")){
-    SlideBtn_3.classList.remove("button-slide_current");
+  if(slideBtn_3.classList.contains("button-slide_current")){
+    slideBtn_3.classList.remove("button-slide_current");
   }
-  SlideBtn_1.classList.add("button-slide_current");
+  slideBtn_1.classList.add("button-slide_current");
 
 
   if(slideImg.classList.contains("site-wrapper-2")){
@@ -44,15 +44,15 @@ SlideBtn_1.addEventListener("click", function(evt){
 
 
 
-SlideBtn_2.addEventListener("click", function(evt){
+slideBtn_2.addEventListener("click", function(evt){
   evt.preventDefault();
-  if(SlideBtn_1.classList.contains("button-slide_current")){
-    SlideBtn_1.classList.remove("button-slide_current");
+  if(slideBtn_1.classList.contains("button-slide_current")){
+    slideBtn_1.classList.remove("button-slide_current");
   }
-  if(SlideBtn_3.classList.contains("button-slide_current")){
-    SlideBtn_3.classList.remove("button-slide_current");
+  if(slideBtn_3.classList.contains("button-slide_current")){
+    slideBtn_3.classList.remove("button-slide_current");
   }
-  SlideBtn_2.classList.add("button-slide_current");
+  slideBtn_2.classList.add("button-slide_current");
 
 
   if(slideImg.classList.contains("site-wrapper-1")){
@@ -76,15 +76,15 @@ SlideBtn_2.addEventListener("click", function(evt){
 
 
 
-SlideBtn_3.addEventListener("click", function(evt){
+slideBtn_3.addEventListener("click", function(evt){
   evt.preventDefault();
-  if(SlideBtn_1.classList.contains("button-slide_current")){
-    SlideBtn_1.classList.remove("button-slide_current");
+  if(slideBtn_1.classList.contains("button-slide_current")){
+    slideBtn_1.classList.remove("button-slide_current");
   }
-  if(SlideBtn_2.classList.contains("button-slide_current")){
-    SlideBtn_2.classList.remove("button-slide_current");
+  if(slideBtn_2.classList.contains("button-slide_current")){
+    slideBtn_2.classList.remove("button-slide_current");
   }
-  SlideBtn_3.classList.add("button-slide_current");
+  slideBtn_3.classList.add("button-slide_current");
 
   if(slideImg.classList.contains("site-wrapper-1")){
     slideImg.classList.remove("site-wrapper-1");
