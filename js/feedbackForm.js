@@ -19,6 +19,7 @@ feedbackForm.addEventListener("submit", function(evt){
   if(!feedbackFormName.value || !feedbackFormEmail.value) {
     evt.preventDefault();
     feedback.classList.remove("feedback_error");
+    feedback.offsetWidth = feedback.offsetWidth;
     feedback.classList.add("feedback_error");
   }
 
