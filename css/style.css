@@ -608,8 +608,18 @@
   border: none;
   height: 48px;
   margin-left: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-  padding: 0px 24px;
+.btn-extra_jam {
+  padding: 0 22px;
+  width: 165px;
+}
+
+.btn-extra_choco {
+  padding: 0 24px;
+  width: 195px;
 }
 
 .bestsellers {
@@ -850,7 +860,7 @@
 }
 
 .blog_titel {
-  margin: 0 0 0px 0;
+  margin: 0 0 2px 0;
   font-weight: 500;
 }
 
