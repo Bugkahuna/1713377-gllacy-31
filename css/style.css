@@ -862,7 +862,8 @@
   height: 430px;
   background-color: var(--basic-white);
   position: relative;
-
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -1158,7 +1159,35 @@
 
 .feedback_show {
   display: block;
+  animation-name: spread;
+  animation-duration: .5s;
 }
+
+@keyframes spread {
+
+  0%  {left:-10%; opacity: .3;};
+  50%  {left:25%;opacity: .6;};
+  100% {left:50%; opacity: 1;};
+
+}
+
+.feedback_error {
+  animation-name: shake;
+  animation-duration: .2s;
+}
+
+@keyframes shake {
+  /*0%, 100% {top:50%; left:50%; transform:translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform:translateX(-10px);}
+  20%, 40%, 60%, 80% {transform:translateX(10px);}*/
+  0%, 100% {left:50%;}
+  10%, 30%, 50%, 70%, 90% {left:49%;}
+  20%, 40%, 60%, 80% {left:51%;}
+}
+
+
+
+
 
 .multyplay-layer_show {
   display: block;
@@ -1803,6 +1832,11 @@ h1 {
 
 .page-btn_edge path{
   fill: var(--transparent-white20);
+}
+
+.yndex-map {
+  height: 100%;
+  width: 100%;
 }
 
 
