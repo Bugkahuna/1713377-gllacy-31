@@ -66,7 +66,8 @@
               <h3 class="visually-hidden">Окно поиска</h3>
                 <div class="search_popup search_popup-show">
                   <form action="https://echo.htmlacademy.ru/" class="search-form" method="get" name="search-form">
-                    <input type="search" class="search-input" placeholder="Крем-брюле">
+                    <input type="search" class="search-input" id="input-search" placeholder="Крем-брюле">
+                    <label for="input-search" class="visually-hidden">Поиск</label>
                   </form>
                 </div>
             </section>
@@ -77,8 +78,10 @@
               </a>
               <div class="login_window login_window-show">
                 <form action="https://echo.htmlacademy.ru/" method="POST" name="login-form" class="login-form">
-                  <input type="text" placeholder="email@example.com" class="login-input" name="login"  required>
-                  <input type="password" placeholder="******" class="pass-input" name="password"  required>
+                  <input type="text" placeholder="email@example.com" class="login-input" id="input-login" name="login"  required>
+                  <label for="input-login" class="visually-hidden" >Логин</label>
+                  <input type="password" placeholder="******" class="pass-input" id="input-pass" name="password"  required>
+                  <label for="input-pass" class="visually-hidden">Пароль</label>
                   <div class="login-controls_wrapper">
                     <button class="btn login-btn" type="submit">Войти</button>
                     <div class="login-controls_links">
@@ -130,14 +133,15 @@
             <li class="breadcrumbs_list-item"><a class="breadcrumbs_list-link breadcrumbs_list-link--current" href="">Сливочное</a></li>
           </ul>
         </section>
-        <h1>Сливочное мороженое</h1>
+        <h1 class="page-title">Сливочное мороженое</h1>
         <section class="filters-block">
           <h2 class="visually-hidden">Выбор по параметрам</h2>
           <form action="https://echo.htmlacademy.ru/" method="get">
             <div class="filters-block_wrapper">
               <fieldset class="filter">
                 <legend class="filter_title">Сортировка</legend>
-                <select name="sorting" class="sorting">
+                <label for="sorting-list" class="visually-hidden"></label>
+                <select name="sorting" class="sorting" id="sorting-list">
                   <option value="popular current-select-value">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style_min.css">
     <link rel="icon" href="favicon.ico">
     <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">-->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e3d84fc2-05d4-40a2-bc88-77863b12a1cf"></script>
     <title>Глейси: HTML Academy: </title>
   </head>
 
@@ -51,7 +50,8 @@
                 <h3 class="visually-hidden">Окно поиска</h3>
                 <div class="search_popup search_popup-show">
                   <form  action="https://echo.htmlacademy.ru/" class="search-form" method="get" name="search-form">
-                    <input type="search" class="search-input" placeholder="Крем-брюле">
+                    <input type="search" class="search-input" id="input-search"  placeholder="Крем-брюле">
+                    <label for="input-search" class="visually-hidden">Поиск</label>
                   </form>
                 </div>
               </section>
@@ -62,8 +62,10 @@
                 </a>
                 <div class="login_window login_window-show">
                   <form action="https://echo.htmlacademy.ru/" method="POST" name="login-form" class="login-form">
-                    <input type="text" placeholder="email@example.com" class="login-input" name="login"  required>
-                    <input type="password" placeholder="******" class="pass-input" name="password"  required>
+                    <input type="text" placeholder="email@example.com" class="login-input" id="input-login" name="login"  required>
+                    <label for="input-login" class="visually-hidden" >Логин</label>
+                    <input type="password" placeholder="******" class="pass-input" id="input-pass" name="password"  required>
+                    <label for="input-pass" class="visually-hidden">Пароль</label>
                     <div class="login-controls_wrapper">
                       <button class="btn login-btn" type="submit">Войти</button>
                       <div class="login-controls_links">
@@ -166,7 +168,7 @@
             <section class="features">
               <h2 class="visually-hidden">Наши преимущества</h2>
               <div class="features_wrapper">
-                <h1>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+                <h1 class="page-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
                 <ul class="features-list">
                   <li class="features-list_item">
                     <p  class="features-list_deccription">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -224,9 +226,12 @@
               <h4>Мы обязательно вам ответим!</h4>
               <button type="button" class="feedeback_close-btn"></button>
               <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="POST">
-                <input type="text" class="input-field feedback_input-name" name="feedback-name" placeholder="Ваше имя:">
-                <input type="email" class="input-field feedback_input-name" name="feedback-email" placeholder="Ваш e-mail:">
-                <textarea name="feedback-text" class="feedback-text" placeholder="В свободной форме"></textarea>
+                <input type="text" class="input-field feedback_input-name" name="feedback-name" placeholder="Ваше имя:" id="input-feedbackname">
+                <label for="input-feedbackname" class="visually-hidden">Ваше имя</label>
+                <input type="email" class="input-field feedback_input-name" name="feedback-email" placeholder="Ваш e-mail:" id="input-feedbackemail">
+                <label for="input-feedbackemail" class="visually-hidden"></label>
+                <textarea name="feedback-text" class="feedback-text" placeholder="В свободной форме" id="feedback-text">Напишите свой текст</textarea>
+                <label for="feedback-text" class="visually-hidden"></label>
                 <button type="submit" class="btn feedback-btn">Отправить</button>
               </form>
             </section>
@@ -308,8 +313,9 @@
           </section>
         </footer>
       </div>
-      <script src="js/icon_customImage_min.js"></script>
-      <script src="js/feedbackForm_min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e3d84fc2-05d4-40a2-bc88-77863b12a1cf"></script>
+      <script src="js/min_icon_customimages.js"></script>
+      <script src="js/min_feedback_form.js"></script>
       <script src="js/slider_min.js"></script>
   </body>
 </html>
